@@ -1,6 +1,11 @@
 
 #  CNN+遷移學習(Vision Transformer)應用於影像辨識腫瘤影像分類
 
+- 本專案結合卷積神經網路（CNN）與 **Vision Transformer**（ViT-B/16)深度遷移學習架構，用於腫瘤影像的二分類（YES/NO）辨識。與傳統 CNN 相比，ViT 具有**Global Attention**，能更有效捕捉影像中病灶可能出現的任意位置，因此特別適合腫瘤判讀這類高度變異、位置不固定的醫療影像任務。
+
+  資料集規模僅 251 張，因此本模型採用 凍結預訓練權重（Freeze Layers） 與基本資料增強，降低過度擬合風險並提升泛化能力。最終模型在驗證集上取得 93.4% 的準確率（Accuracy）。
+
+
 ### A. 數據 (Dataset & DataLoader)
 
 #### 1. 資料來源
