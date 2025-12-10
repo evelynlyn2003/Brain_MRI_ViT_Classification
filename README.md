@@ -1,5 +1,5 @@
 
-# Vision Transformer 於腦部 MRI 腫瘤影像之二元分類電腦輔助診斷系統
+#  CNN+遷移學習(Vision Transformer)應用於影像辨識腫瘤影像分類
 
 ### A. 數據 (Dataset & DataLoader)
 
